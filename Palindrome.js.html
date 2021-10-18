@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<script>
+    function Palindrome(str) {
+        const len = string.length;
+
+        //Use for loop to divide the words into 2 half
+        for(let i = 0; i < len/2; i++) {
+            if(string[i] !== string[len - 1 - i]) {
+                alert('it is not a palindrome');
+            }
+        }
+        alert('It is a palindrome');
+
+    }
+
+    const string = prompt('Enter a string or number: ');
+
+    const value = Palindrome(string);
+
+    console.log(value);
+
+    function PalindromeNumber(){
+        var a,b,num,temp = 0;
+        num = prompt('Enter a Number: ');
+        b = num;
+        while (num > 0) {
+            a = num % 10;
+            num = parseInt(num/10);
+            temp = temp*10 + a;
+            
+        }
+        if (temp == b) {
+            alert("it is a Plindrome Number..");
+        } else {
+            alert("It is not a Palindrome Number..");
+        }
+    }
+
+    PalindromeNumber();
+</script>
